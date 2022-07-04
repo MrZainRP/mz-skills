@@ -1,6 +1,8 @@
 ## <h3 align='center'> Moved to a new repo so issues can be opened old version can be found  <a href='https://github.com/Kingsage311/qb-skillz-old'>here</a></h3>
 ## <h3 align='center'>For more support or to see more of my resources you can join my <a href='https://discord.gg/aCFPpcKEGk'>discord</a></h3>
 
+### ALL CREDIT TO Kings#4220 WHO CREATED AND DISTRIBUTED THIS HANDY SCRIPT - NOW THOUGH BURN ONE STUDIOS. THIS FORK FOCUSES ON RP SKILLS AND PROGRESSION RATHER THAN ALTERING IN GAME SKILLS AND GTA V NATIVE MECHANICS. THE FOLLOWING EXPLANATION IS Kings' AS WELL, INCLUDING HOW TO UTILISE EXPORTS AND CALL UPON EXPERIENCE IN OTHER RESOURCES.
+
 ### [ What is this? ]
 - A skillsystem based on GTA's existing skills.
 - Very easy to configure, just check the config.
@@ -48,12 +50,6 @@ end)
     exports["qb-skillz"]:GetCurrentSkill(skill)
 ```
 ### [ Previews ]
-
-<h3 align='center'>Preview of the main qb-skillz branch</h3>
-<p align="center">
-    <img src="https://raw.githubusercontent.com/Kingsage311/Kingsage311/main/assets/skillzmain.png"/>
-</p>
-
 
 <h3 align='center'>Preview of the "custom" qb-skillz branch THIS IS NOT OFFICALLY SUPPORTED</h3>
 <p align="center">
