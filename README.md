@@ -39,7 +39,7 @@ end)
 
 - The export to obtain a player's current skill to interact with other scripts is as follows:
 ```lua
-    exports["qb-skillz"]:GetCurrentSkill(skill)
+    exports["mz-skills"]:GetCurrentSkill(skill)
 ```
 
 - For radial menu access to "skills" command add this to qb-radialmenu/config.lua - line 296 and following:
