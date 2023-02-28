@@ -14,6 +14,8 @@ Config.Debug = false                        -- Set to "true" to print debugging 
 
 Config.UseOxMenu = true                    -- set to "true" to use ox_lib menu instead of qb-menu
 
+Config.skilloxcolor = "teal"                -- set color (https://mantine.dev/theming/colors/#default-colors) exemple teal or indigo
+
 Config.TypeCommand = true                   -- Set to "false" to disable the "/skills" command (or whatever word you set in the next function)
 
 Config.Skillmenu = "skills"                 -- phrase typed to display skills menu (check readme.md to set to commit to radial menu)
