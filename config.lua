@@ -12,9 +12,11 @@ Config.NotifyType = 'okok'                  -- Notification type: 'qb' for QBCor
 
 Config.Debug = false                        -- Set to "true" to print debugging messages
 
-Config.UseOxMenu = true                    -- set to "true" to use ox_lib menu instead of qb-menu
-
-Config.skilloxcolor = "teal"                -- set color (https://mantine.dev/theming/colors/#default-colors) exemple teal or indigo
+Config.UseOxMenu = true                     -- set to "true" to use ox_lib menu instead of qb-menu
+-- if "Config.UseOxMenu = true", then the following parameters apply:
+Config.XPBarColour = "cyan"                 -- Change the colour of your XP Bar.
+Config.SkillsTitle = "MZ-SKILLS"            -- Change this to label your skill system as you see fit.
+Config.XPMenuPosition = 'top-left'          -- Change the position of your XP menu ('top-left' or 'top-right' or 'bottom-left' or 'bottom-right')
 
 Config.TypeCommand = true                   -- Set to "false" to disable the "/skills" command (or whatever word you set in the next function)
 

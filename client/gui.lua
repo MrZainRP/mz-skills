@@ -111,14 +111,14 @@ local function createSkillMenuOX()
                 v
             },
             progress = math.floor((v['Current'] - v['Min']) / (v['Max'] - v['Min']) * 100),
-            colorScheme = Config.skilloxcolor,
+            colorScheme = Config.XPBarColour,
         }
     end
 
     lib.registerMenu({
         id = 'skill_menu',
-        title = 'mz-skills',
-        position = 'top-right',
+        title = Config.SkillsTitle,
+        position = Config.XPMenuPosition,
         options = options
     }, function(selected)
         print('Selected: ' .. selected)
@@ -133,16 +133,16 @@ RegisterCommand(Config.Skillmenu, function()
     elseif Config.TypeCommand then
         createSkillMenu()
     else 
-        Wait(10)
+        wait(10)
     end
 end)
         
 RegisterNetEvent("mz-skills:client:CheckSkills", function()
     if Config.UseOxMenu then
         createSkillMenuOX()
-    elseif not Config.UseOxMenu then
+    elseif not Config.TypeCommand then
         createSkillMenu()
     else 
-        Wait(10)
+        wait(10)
     end
 end)
