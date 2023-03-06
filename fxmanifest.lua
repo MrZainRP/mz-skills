@@ -1,17 +1,10 @@
 fx_version 'cerulean'
-
 game 'gta5'
 
-lua54 'yes'
+description 'mz-skills - a customised fork of qb-skillz created by Kings#4220'
+version '1.0.0'
 
-description 'mz-skills - a customised skills fork based on functionality provided for by B1-skillz created by Kings#4220'
-
-version '1.2.1'
-
-shared_script {
-    '@ox_lib/init.lua',
-    'config.lua'     
-}
+shared_script 'config.lua'
 
 server_scripts {
 	'@oxmysql/lib/MySQL.lua',
