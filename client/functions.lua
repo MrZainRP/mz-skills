@@ -37,7 +37,7 @@ UpdateSkill = function(skill, amount)
     RefreshSkills()
     if Config.Notifications and  tonumber(amount) > 0 then
         if Config.NotifyType == "3d" then
-            Notification("~g~+" .. amount .. " SHITTY NOTI SYSTEM ~s~" .. skill)
+            Notification("~g~+" .. amount .. " XP to ~s~" .. skill)
         elseif Config.NotifyType == 'qb' then
             QBCore.Functions.Notify("+" .. amount .. " XP to " .. skill, "success", 3500)
         elseif Config.NotifyType == "okok" then
