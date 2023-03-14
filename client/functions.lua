@@ -23,7 +23,7 @@ end
 
 UpdateSkill = function(skill, amount)
     if not Config.Skills[skill] then
-        print("Skill " .. skill .. " does not exist")
+        print("Habilidad " .. skill .. " no existe")
         return
     end
     local SkillAmount = Config.Skills[skill]["Current"]
@@ -37,11 +37,11 @@ UpdateSkill = function(skill, amount)
     RefreshSkills()
     if Config.Notifications and  tonumber(amount) > 0 then
         if Config.NotifyType == "3d" then
-            Notification("~g~+" .. amount .. " XP to ~s~" .. skill)
+            Notification("~g~+" .. amount .. " XP en ~s~" .. skill)
         elseif Config.NotifyType == 'qb' then
-            QBCore.Functions.Notify("+" .. amount .. " XP to " .. skill, "success", 3500)
+            QBCore.Functions.Notify("+" .. amount .. " XP en " .. skill, "success", 3500)
         elseif Config.NotifyType == "okok" then
-            exports['okokNotify']:Alert("SKILL GAINED", "+" .. amount .. " XP to " .. skill, 3500, 'info')
+            exports['okokNotify']:Alert("HABILIDAD GANADA", "+" .. amount .. " XP en " .. skill, 3500, 'info')
         end
     end
 	TriggerServerEvent("skillsystem:update", json.encode(Config.Skills))
@@ -60,7 +60,7 @@ RefreshSkills = function()
         if Config.Debug then
             print(type .. ": " .. value['Current'])
         elseif Config.Debug and not Config.Skills[skill] then
-            print("something went wrong")
+            print("Algo ha ido mal")
         end
         if value["Stat"] then
             StatSetInt(value["Stat"], round(value["Current"]), true)
@@ -76,7 +76,7 @@ exports('CheckSkill', function(skill, val, hasskill)
             hasskill(false)
         end
     else
-        print("Skill " .. skill .. " doesn't exist")
+        print("Habilidad " .. skill .. " no existe")
         hasskill(false)
     end
 end)

@@ -33,24 +33,24 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
                     elseif IsPedInMeleeCombat(ped) then
                         local isTargetting, targetEntity = GetPlayerTargetEntity(PlayerId())
                         if isTargetting and not IsEntityDead(targetEntity) and GetMeleeTargetForPed(ped) ~= 0 then
-                        UpdateSkill("Strength", 0.2)
+                        UpdateSkill("Fuerza", 0.2)
                         end
                     elseif IsPedSwimmingUnderWater(ped) then
-                        UpdateSkill("Lung Capacity", 0.5)
+                        UpdateSkill("Capacidad Pulmonar", 0.5)
                     elseif IsPedShooting(ped) then
-                        UpdateSkill("Shooting", 0.1)
+                        UpdateSkill("Disparo", 0.1)
                     elseif DoesEntityExist(vehicle) and GetPedInVehicleSeat(vehicle, -1) == ped then
                         local speed = GetEntitySpeed(vehicle) * 3.6
                         if GetVehicleClass(vehicle) == 8 or GetVehicleClass(vehicle) == 13 and speed >= 5 then
                             local rotation = GetEntityRotation(vehicle)
                             if IsControlPressed(0, 210) then
                                 if rotation.x >= 25.0 then
-                                    UpdateSkill("Wheelie", 0.2)
+                                    UpdateSkill("Caballito", 0.2)
                                 end 
                             end
                         end
                         if speed >= 80 then
-                            UpdateSkill("Driving", 0.1)
+                            UpdateSkill("Conduccion", 0.1)
                         end
                     end
                 end
