@@ -133,7 +133,7 @@ RegisterCommand(Config.Skillmenu, function()
     elseif Config.TypeCommand then
         createSkillMenu()
     else 
-        wait(10)
+        Wait(10)
     end
 end)
         
@@ -143,6 +143,6 @@ RegisterNetEvent("mz-skills:client:CheckSkills", function()
     elseif not Config.TypeCommand then
         createSkillMenu()
     else 
-        wait(10)
+        Wait(10)
     end
 end)
