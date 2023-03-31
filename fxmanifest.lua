@@ -6,7 +6,7 @@ lua54 'yes'
 
 description 'mz-skills - a customised skills fork based on functionality provided for by B1-skillz created by Kings#4220'
 
-version '1.3.0'
+version '1.3.1'
 
 shared_script {
     '@ox_lib/init.lua',

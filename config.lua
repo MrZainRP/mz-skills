@@ -26,9 +26,12 @@ Config.Skillmenu = "skills"                 -- phrase typed to display skills me
 --GTA NATIVE SKILLS--
 ---------------------
 
-Config.B1Natives = true                    -- Change to "true" to use B1-skillz native functions as well as mz-skills
+Config.B1Natives = false                    -- Change to "true" to use B1-skillz native functions as well as mz-skills
                                             -- Please make sure you uncomment the "GTA NATIVE SKILLS" set out below. 
                                             -- To do so highlight all relevant lines of code and hold down "ctrl" + "k" and then press "u".
+                                            -- PLEASE NOTE SUPPORT FOR B1 NATIVE SKILLS IS NOT OFFERED AND MAY COMPROMISE YOUR DATABASE RE: EXISTING SKILLS
+                                            -- mz-skills recommendation is to leave this function to "false" unless you know what you are doing or have
+                                            -- sufficient back ups of your player data (particularly live player data).
 
 -------------
 --RP SKILLS--
@@ -113,44 +116,44 @@ Config.Skills = {
     }, 
 
 ---------------------
---GTA NATIVE SKILLS--
+--GTA NATIVE SKILLS-- UNSUPPORTED FUNCTIONALITY FROM THE ORIGINAL B1-SKILLZ
 ---------------------
 -- PLEASE NOTE: THE FOLLOWING VALUES SHOULD ONLY BE UNCOMMENTED IF Config.B1Natives = true.
 
-    ["Stamina"] = {
-        ["Current"] = 0, -- Default value 
-        ["RemoveAmount"] = -0.3, -- % to remove when updating,
-        ["Stat"] = "MP0_STAMINA", -- GTA stat hashname
-        ['icon'] = 'fas fa-walking',
-    },
-    ["Strength"] = {
-        ["Current"] = 0,
-        ["RemoveAmount"] = -0.3,
-        ["Stat"] = "MP0_STRENGTH",
-        ['icon'] = 'fas fa-dumbbell',
-    },
-    ["Lung Capacity"] = {
-        ["Current"] = 0,
-        ["RemoveAmount"] = -0.1,
-        ["Stat"] = "MP0_LUNG_CAPACITY",
-        ['icon'] = 'fas fa-heartbeat',
-    },
-    ["Shooting"] = {
-        ["Current"] = 0,
-        ["RemoveAmount"] = -0.1,
-        ["Stat"] = "MP0_SHOOTING_ABILITY",
-        ['icon'] = 'fas fa-bullseye',
-    },
-    ["Driving"] = {
-        ["Current"] = 0,
-        ["RemoveAmount"] = -0.5,
-        ["Stat"] = "MP0_DRIVING_ABILITY",
-        ['icon'] = 'fas fa-car-side',
-    },
-    ["Wheelie"] = {
-        ["Current"] = 0,
-        ["RemoveAmount"] = -0.2,
-        ["Stat"] = "MP0_WHEELIE_ABILITY",
-        ['icon'] = 'fas fa-wheelchair',
-    },
+    -- ["Stamina"] = {
+    --     ["Current"] = 0, -- Default value 
+    --     ["RemoveAmount"] = -0.3, -- % to remove when updating,
+    --     ["Stat"] = "MP0_STAMINA", -- GTA stat hashname
+    --     ['icon'] = 'fas fa-walking',
+    -- },
+    -- ["Strength"] = {
+    --     ["Current"] = 0,
+    --     ["RemoveAmount"] = -0.3,
+    --     ["Stat"] = "MP0_STRENGTH",
+    --     ['icon'] = 'fas fa-dumbbell',
+    -- },
+    -- ["Lung Capacity"] = {
+    --     ["Current"] = 0,
+    --     ["RemoveAmount"] = -0.1,
+    --     ["Stat"] = "MP0_LUNG_CAPACITY",
+    --     ['icon'] = 'fas fa-heartbeat',
+    -- },
+    -- ["Shooting"] = {
+    --     ["Current"] = 0,
+    --     ["RemoveAmount"] = -0.1,
+    --     ["Stat"] = "MP0_SHOOTING_ABILITY",
+    --     ['icon'] = 'fas fa-bullseye',
+    -- },
+    -- ["Driving"] = {
+    --     ["Current"] = 0,
+    --     ["RemoveAmount"] = -0.5,
+    --     ["Stat"] = "MP0_DRIVING_ABILITY",
+    --     ['icon'] = 'fas fa-car-side',
+    -- },
+    -- ["Wheelie"] = {
+    --     ["Current"] = 0,
+    --     ["RemoveAmount"] = -0.2,
+    --     ["Stat"] = "MP0_WHEELIE_ABILITY",
+    --     ['icon'] = 'fas fa-wheelchair',
+    -- },
 }
