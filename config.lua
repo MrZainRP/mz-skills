@@ -84,7 +84,7 @@ Config.Skills = {
         ["Stat"] = "HITMAN_ABILITY",
         ['icon'] = 'fas fa-skull',
     }, 
-    ["Driving"] = {
+    ["Sprint Driving"] = {
         ["Current"] = 0,
         ["RemoveAmount"] = 0,
         ["Stat"] = "DRIVER_ABILITY",

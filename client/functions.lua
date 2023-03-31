@@ -30,7 +30,7 @@ UpdateSkill = function(skill, amount)
     if SkillAmount + tonumber(amount) < 0 then
         Config.Skills[skill]["Current"] = 0
     elseif SkillAmount + tonumber(amount) > 250000 then
-        Config.Skills[skill]["Current"] = 100
+        Config.Skills[skill]["Current"] = 250000
     else
         Config.Skills[skill]["Current"] = SkillAmount + tonumber(amount)
     end
