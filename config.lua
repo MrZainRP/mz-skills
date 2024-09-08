@@ -120,6 +120,12 @@ Config.Skills = {
         ["Stat"] = "HUNTING_ABILITY",
         ['icon'] = 'fas fa-paw',
     },
+    ["Metal Detecting"] = {
+        ["Current"] = 0,
+        ["RemoveAmount"] = 0,
+        ["Stat"] = "HUNTING_ABILITY",
+        ['icon'] = 'fas fa-paw',
+    },
 
 ---------------------
 --GTA NATIVE SKILLS-- UNSUPPORTED FUNCTIONALITY FROM THE ORIGINAL B1-SKILLZ
