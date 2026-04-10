@@ -29,8 +29,8 @@ UpdateSkill = function(skill, amount)
     local SkillAmount = Config.Skills[skill]["Current"]
     if SkillAmount + tonumber(amount) < 0 then
         Config.Skills[skill]["Current"] = 0
-    elseif SkillAmount + tonumber(amount) > 250000 then
-        Config.Skills[skill]["Current"] = 250000
+    elseif SkillAmount + tonumber(amount) > 1584350 then
+        Config.Skills[skill]["Current"] = 1584350
     else
         Config.Skills[skill]["Current"] = SkillAmount + tonumber(amount)
     end
