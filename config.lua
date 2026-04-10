@@ -60,7 +60,7 @@ Config.Skills = {
         ["Stat"] = "RECYCLING_ABILITY",
         ['icon'] = 'fas fa-recycle',
     },
-    ["Scrapping"] = {
+    ["Scraping"] = {
         ["Current"] = 0,
         ["RemoveAmount"] = 0,
         ["Stat"] = "SCRAP_ABILITY",
